@@ -1,0 +1,19 @@
+SetEnv PHP_VER 5
+ErrorDocument 400 http://www.netflo300.com/erreur/400.php
+ErrorDocument 401 http://www.netflo300.com/erreur/401.php
+ErrorDocument 403 http://www.netflo300.com/erreur/403.php
+ErrorDocument 404 http://www.netflo300.com/erreur/404.php
+ErrorDocument 405 http://www.netflo300.com/erreur/405.php
+ErrorDocument 406 http://www.netflo300.com/erreur/406.php
+ErrorDocument 407 http://www.netflo300.com/erreur/407.php
+ErrorDocument 412 http://www.netflo300.com/erreur/412.php
+ErrorDocument 414 http://www.netflo300.com/erreur/414.php
+ErrorDocument 500 http://www.netflo300.com/erreur/500.php
+ErrorDocument 501 http://www.netflo300.com/erreur/501.php
+ErrorDocument 502 http://www.netflo300.com/erreur/502.php
+ErrorDocument 504 http://www.netflo300.com/erreur/504.php
+
+
+
+
+

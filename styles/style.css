@@ -1,0 +1,274 @@
+ html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
+ 
+ @font-face {
+    font-family: "CodeStrabourg";
+    src: url('CodeStrasbourg.ttf');
+}
+
+body {
+	background-color:#f6f0d8;
+	margin:auto 10px auto 10px;
+	font: 10px Verdana, "Lucida Grande", Lucida, Tahoma, "Trebuchet MS", Arial, Geneva, Helvetica, sans-serif ;;
+	padding:10px 5px 0 5px;
+	z-index:1;
+}
+
+.messageCode {
+	font-family:"CodeStrabourg", Arial;
+	font-size:24pt;
+}
+
+#header {
+	width:100%;
+	text-align:center;
+}
+
+img.action {
+	cursor:pointer;;
+}
+
+#header ul {
+	list-style:none outside;
+}
+
+#header ul li {
+	display:inline;
+	margin: 0 5px;
+}
+
+.rouge {
+	color:red;
+}
+
+.vert {
+	color:green;
+}
+
+.orange {
+	color:orange;
+}
+
+.bleu {
+	color:blue;
+}
+
+#message {
+  position:absolute;
+  top:5px;
+  left:5px;
+  min-width:100px;
+  max-height:30px;
+  font-size:8pt;
+  color:red;
+  float:left;
+}
+
+#message fieldset {
+  color:red;
+  border-color:black;
+}
+
+#message fieldset legend {
+  font-weight:bold;
+}
+
+#overlay {
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background-color:gray;
+	opacity:0.8;
+	visibility:hidden;	
+	z-index:100;
+}
+
+#modal {
+	position:fixed;
+	margin-top:200px;
+	margin-left:200px;
+	z-index:150;
+	min-width:300px;
+	border-color:#C9A584 #5D4C2F #5D4C2F #C9A584;
+	border-style:double;
+	border-width:3px;
+	visibility:hidden;
+}
+
+#modal .titre{
+	/*background-color: #ECCF8E;*/
+	background-color: rgb(102,104,198);
+	text-align:center;
+	cursor:move;
+	font-weight:bold;
+	height:15px;
+}
+#modal .contenu {
+	/*background-color:#f6f0d8;*/
+	background-color: lightblue;
+	text:align:left;
+	padding:3px;
+}
+
+#container1 {
+	display:inline;	
+	width:100%;
+}
+#menu {
+	float:left;
+	border:1px none gray;	
+	margin-top:25px;
+	padding-left:5px;
+}
+
+#menu ul li{
+	list-style:none outside;
+	}
+
+#menu ul li a {
+	font-size:14pt;
+	margin-top:15px;
+	margin-bottom:15px;
+	margin-left:-30px;
+	list-style:none outside;
+	display:block;
+	background-color: #ECCF8E;
+	text-align:center;
+	text-decoration:none;
+	font-weight:bold;
+	border-color:#C9A584 #5D4C2F #5D4C2F #C9A584;
+	border-style:double;
+	border-width:3px;
+	color:#542C0F;
+	font-weight:bold;
+	text-align:center;
+	padding : 5px 5px 5px 5px;
+}
+
+#menu ul li a:hover {
+	text-decoration:underline;
+	color:red;
+}
+
+#contenu {
+	padding-left:30px;
+	overflow:auto;
+}
+
+#contenu h3 {
+	color:#AA0000;
+	font-size:16pt;
+	margin-bottom:5px;
+}
+
+#contenu p {
+	color:black;
+	font-size:12pt;
+}
+
+#contenu table td {
+	border:1px solid gray collapse;
+	font-size:12pt;
+}
+
+
+table caption {
+  text-decoration:underline;
+  font-weight:bold;
+  margin-bottom:2px;	
+}
+
+table tr td.gauche {
+	text-align:right;
+}
+
+table tr td.droite {
+	text-align:left;
+}
+
+table tr td.centre {
+	text-align:center;
+}
+
+.carte {
+  position:absolute; 
+  border-collapse:collapse;   
+}
+
+table.carte tr td:hover {
+  background-color:yellowgreen ;  
+}
+
+table.messagerie tr.nl {
+	font-weight:bold;
+}
+
+table.tab_right {
+	float:right;
+	margin-top:-110px;
+	margin-left:-700px;
+}
+
+table.tab_right_haut {
+	float:right;
+	margin-top:-140px;
+	margin-left:-700px;
+}
+
+a img{
+  border:0px;
+}
+
+.infobulle{
+  position: absolute; 
+  visibility : hidden;
+  border: 1px solid Black;
+  padding: 10px;
+  z-index: 150;
+  font-family: Verdana, Arial;
+  font-size: 10px;
+  background-color: #FFFFCC;
+}
+
+#context_menu{
+  position: absolute; 
+  visibility : hidden;
+  border: 1px solid Black;
+  z-index: 150;
+  font-family: Verdana, Arial;
+  font-size: 12px;
+  background-color: white;
+  width:200px;
+}
+
+#context_menu ul li{
+  list-style:none inside;
+  width:200px;
+
+}
+
+#context_menu ul li a {
+	width:198px;
+	position:relative;
+  width:100%;
+  margin-left:-40px;
+  margin-right:0px;
+  display:block;
+  text-align:left;
+  text-decoration:none;
+  font-weight:bold;
+  text-align:center;
+  cursor:pointer;
+}
+
+#context_menu ul li a:hover {
+  background-color:lightblue;  
+}
+
+#debug {
+	display:none;
+}
+
+img.icone {
+	width:20px;
